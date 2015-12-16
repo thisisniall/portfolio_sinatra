@@ -1,0 +1,173 @@
+* {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+/*Note: tried some no-repeat and fixing/centering (Rather than covering) of images,
+but ended up liking cover more (especially on larger screens) - tiling only seems to
+be an issue when the pages are switched to a heavily-vertical alignment.
+Once JS is learned, may see if there are conditional formatting options relative to window-size.*/
+
+#index {
+	background-image: url(imgs/islandrange-7.jpg);
+	background-size: cover;
+}
+
+#about {
+	background-image: url(imgs/montanahills.jpg);
+	background-size: cover;
+}
+
+#clickbait {
+	background-image: url(imgs/keywest-5031.jpg);
+	background-size: cover;
+}
+
+#right-sidebar {
+	position: fixed;
+		right: 0;
+		top: 100px;
+	max-width: 300px;
+	margin-top: 100px;
+	margin-left: 20px;
+	background-color:rgba(0,0,0,0.1);
+	border-radius: 5px;
+}
+
+.iconsize {
+	height: 24px;
+	width: 24px;
+}
+
+.btnz {
+   display: block;
+   padding: 10px 15px;
+   border:none;
+   text-decoration: none;
+   font-size: 18px;
+   color: #FFF;
+   border-radius: 5px;
+}
+ 
+.btnz:hover {
+   background-color: #000000;
+   border-radius: 5px;
+}
+
+#navbar {
+	font-family: arial;
+	background-color: black;
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	top: 0;
+	margin-bottom: 15px;
+	padding-bottom: 2px;
+}
+
+#navbar ul {
+	display: inline;
+	margin: 0 auto;
+}
+
+#navbar ul:after {
+	content: " "; clear: both; display: block;
+}
+
+#navbar ul li {
+	display: inline;
+	padding-top: 5px;
+	margin-right: 9%;
+	margin-left: 1%;
+}
+
+#navbar ul ul {
+	display: none;
+	position: absolute; top: 100%; left: 50%;
+	background-color: rgba(0,0,0,.5);
+	border-radius: 5px;
+	max-width: 175px
+}
+
+#navbar ul li:hover > ul {
+	display: block;
+}
+
+#navbar ul > li > ul > li {
+	display: block;
+	color: white;
+	font-style: bold;
+	min-width: 200px;
+	padding: 5px 0px;
+	text-align: left;
+}
+
+#navbar a {
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	padding: 5px 5px;
+	border-radius: 5px;
+}
+
+#navbar a:hover {
+	background-color: #ececec;
+	color: black;
+}
+
+#bigtext {
+	margin: 0 auto;
+	font-family: Arial;
+	font-size: 48px;
+	width: 500px;
+	color: white;
+  	vertical-align: center;
+  	margin-top: 40vh;
+}
+
+#aboutme {
+	margin: 0 auto;
+	width: 80%;
+	font-family: Arial;
+	color: white;
+	vertical-align: center;
+	margin-top: 10%;
+}
+
+#aboutme h1 {
+	font-size: 36px;
+	text-align: center;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin-bottom: 15px
+}
+
+.infobox {
+	display: inline-block;
+	text-indent: 18px;
+	width: 325px;
+	padding: 5px 20px;
+	margin: 5px;
+	background-color: rgba(0,0,0,0.5);
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.infobox h4 {
+	text-align: center
+}
+
+#clickbaitcontent {
+	margin: 0 auto;
+	width: 570px;
+	vertical-align: center;
+	text-align: center;
+	font-family: Arial;
+	color: white;
+	margin-top: 10%;
+}
+
+#clickbaitcontent h1 {
+	margin-bottom: 10px;
+}

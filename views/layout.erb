@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title> <%= @title %> </title>
+</head>
+<body id=<% #{@background} %>>
+
+	<nav id="navbar">
+		<ul>
+			<li><a href="/about">about</a></li>					
+			<li><a href="/">home</a></li>
+			<li>
+				<a href="/">projects</a>
+			    <ul>
+			      <li><a href="http://nycda.zone/murphy591/part-4-website/pages/" target="_blank">pre-work</a></li>
+			      <li><a href="/">this website</a></li>
+			      <li><a href="https://github.com/andrew-schultz/new_project_causes" target="_blank">causes website</a></li>
+			    </ul>
+ 			</li>
+ 			<li><a href="/clickbait">clickbait</a></li>
+			</ul>
+	</nav>
+
+
+		<div id="right-sidebar">
+			<!-- Github Link -->
+			<a class="btnz" href="http://github.com/thisisniall/" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+			 
+			<!-- Rebel Alliance Button -->
+			<a class="btnz" href="https://www.youtube.com/watch?v=TVgSV8c87lo" target="_blank"><i class="fa fa-rebel fa-lg"></i></a>
+			 
+			<!-- Empire Button -->
+			<a class="btnz" href="https://www.youtube.com/watch?v=-bzWSJG93P8" target="_blank"><i class="fa fa-empire fa-lg"></i></a>
+			 
+			<!-- Facebook Button -->
+			<a class="btnz" href="http://facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg"></i></a>
+			 
+			<!-- Noon Pacific Button -->
+			<a class="btnz" href="http://noonpacific.com/#/" target="_blank"><img class="iconsize" src="imgs/noonpacificwhite.png"></a>
+			 
+			<!-- LinkedIn Share Button -->
+			<a class="btnz" href="http://linkedin.com" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a> 
+
+			<!-- Mail link Button -->
+			<a class="btnz" href="mailto:niallpatrickmurphy@gmail.com"><i class="fa fa-envelope fa-lg"></i></a> 
+
+			<!-- Skype Call Button // Note that I'd like to make this an auto add me as a contact button rather than a call button -->
+			<a class="btnz black" href="skype:nnnniall"><i class="fa fa-skype fa-lg"></i></a> 
+		</div>
+
+		<%= yield %>
+
+
+</body>
+</html>
